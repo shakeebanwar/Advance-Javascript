@@ -6,6 +6,10 @@
 //sort
 //reduce
 
+
+/*
+The forEach() method does not create a new array based on the given array. The map() method creates an entirely new array.
+*/
 const companies = [
 
     {name : "Google",category:"Product Base",start:1981,end:2004},
