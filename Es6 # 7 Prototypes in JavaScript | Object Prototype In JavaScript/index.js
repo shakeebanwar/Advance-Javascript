@@ -129,20 +129,30 @@ upar humna ak object ka prototype dosra ma inherit kar ka use kiya tha  necha bi
 humna __proto__ isko use kiya tha yaha per humna prototype ko use kiya ha
 
 */
-function Myprototype(name,roll){
+function Myprototype(name,roll,classses){
 
     this.name = name,
-    this.roll = roll
+    this.roll = roll,
+    this.class = classses
 }
 
 //ak sa zada prototype bi add kar sakta ha
 
-Myprototype.prototype = obj1
+//Myprototype.prototype = obj1
 Myprototype.prototype = obj3
 
 
 
-//ya constructor style ma function call kiya ha
-const myproto = new Myprototype("shakeeb",45)
+/*
+1.ya constructor style ma function call kiya ha 
+2.agar ma yaha koi ak value bi pass na karo for e.g ma class ki value pass na karo tu wo undefined aye bhala 
+hi wo initial value obj ma mana di ho lakin abhi ma Myprototype ka referencing sa call kar raha ho tu mujhe 
+sb value dani hongi
+
+
+*/
+const myproto = new Myprototype("shakeeb",45,"Bscs")
+console.log(myproto)
 console.log(myproto.getRoll())
 console.log(myproto.class)
+console.log(myproto.name)
