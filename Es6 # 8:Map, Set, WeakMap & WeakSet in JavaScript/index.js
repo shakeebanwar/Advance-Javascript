@@ -142,8 +142,8 @@ console.log(ws.has(obj1))
 let wm = new WeakMap();
 console.log(wm)
 
-var obj1 = {"name":"shakeeb"}
-var obj2 = {"name":"anwar"}
+var obj1 = {}
+var obj2 = {}
 
 wm.set(obj1,"public")
 wm.set(obj2,"private")
